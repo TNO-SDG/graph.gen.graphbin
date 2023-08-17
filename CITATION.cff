@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+license: Apache-2.0
+message: If you use this software, please cite it using these metadata.
+authors:
+      - name: TNO PET Lab
+        city: The Hague
+        country: NL
+        email: petlab@tno.nl
+        website: https://pet.tno.nl
+type: software
+url: https://pet.tno.nl
+contact:
+      - name: TNO PET Lab
+        city: The Hague
+        country: NL
+        email: petlab@tno.nl
+        website: https://pet.tno.nl
+repository-code: https://github.com/TNO-SDG/graph.gen.graphbin
+repository-artifact: https://pypi.org/project/tno.sdg.gen.graph.graphbin
+title: TNO PET Lab - Synthetic Data Generation (SDG) - Graph - Generation - GraphBin
+version: v0.1.1
+date-released: 2023-09-15
+

@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tno.sdg.graph.gen.graphbin"
+description = "GraphBin: a synthetic graph generator"
+readme = "README.md"
+authors = [{name = "TNO PET Lab", email = "petlab@tno.nl"}]
+maintainers = [{name = "TNO PET Lab", email = "petlab@tno.nl"}]
+keywords = [
+    "TNO",
+    "SDG",
+    "synthetic data",
+    "synthetic data generation",
+    "graph",
+]
+license = {text = "Apache License, Version 2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Typing :: Typed",
+    "Topic :: Scientific/Engineering",
+]
+urls = {Homepage = "https://pet.tno.nl/", Documentation = "https://pet.tno.nl/sdg/graph/gen/graphbin/0.1.1", Source = "https://github.com/TNO-SDG/graph.gen.graphbin"}
+dynamic = ["version"]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.21",
+    "scipy>=1.9",
+    "scikit-learn>=1.1",
+    "pandas>=1.5",
+]
+
+[project.optional-dependencies]
+scripts = [
+    "networkx>=2.8",
+    "matplotlib>=3.6",
+]
+tests = [
+    "pytest",
+]
+
+[tool.setuptools]
+platforms = ["any"]
+
+[tool.setuptools.dynamic]
+version = {attr = "tno.sdg.graph.gen.graphbin.__version__"}
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
